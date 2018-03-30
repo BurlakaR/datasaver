@@ -1,0 +1,14 @@
+/home/roman/Documents/datasaver/target/generated-sources/protobuf/java/com/shop/SaveCategoryRequest.java
+/home/roman/Documents/datasaver/target/generated-sources/protobuf/java/com/shop/SaveCategoryRequestOrBuilder.java
+/home/roman/Documents/datasaver/target/generated-sources/protobuf/grpc-java/com/shop/ProductServiceGrpc.java
+/home/roman/Documents/datasaver/target/generated-sources/protobuf/java/com/shop/ProductProto.java
+/home/roman/Documents/datasaver/src/main/java/com/datasaver/save/TestSavings.java
+/home/roman/Documents/datasaver/src/main/java/com/shopserver/database/objects/Property.java
+/home/roman/Documents/datasaver/target/generated-sources/protobuf/java/com/shop/SaveProductRequest.java
+/home/roman/Documents/datasaver/src/main/java/com/datasaver/Starter.java
+/home/roman/Documents/datasaver/target/generated-sources/protobuf/java/com/shop/SaveResponse.java
+/home/roman/Documents/datasaver/src/main/java/com/shopserver/database/objects/Product.java
+/home/roman/Documents/datasaver/src/main/java/com/datasaver/grpc/Connector.java
+/home/roman/Documents/datasaver/target/generated-sources/protobuf/java/com/shop/SaveResponseOrBuilder.java
+/home/roman/Documents/datasaver/src/main/java/com/shopserver/database/objects/Category.java
+/home/roman/Documents/datasaver/target/generated-sources/protobuf/java/com/shop/SaveProductRequestOrBuilder.java
