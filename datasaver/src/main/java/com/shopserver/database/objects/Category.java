@@ -12,4 +12,5 @@ public class Category implements Serializable{
 
     @NonNull private String url;
     @NonNull private List<String> subcategories;
+
 }

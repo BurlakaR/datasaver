@@ -20,6 +20,11 @@ public final class ProductProto {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_shop_SaveResponse_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_shop_DeleteResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_shop_DeleteResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_shop_SaveCategoryRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -29,6 +34,51 @@ public final class ProductProto {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_shop_SaveProductRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_shop_DeleteProduct_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_shop_DeleteProduct_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_shop_DeleteClient_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_shop_DeleteClient_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_shop_DeleteCategory_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_shop_DeleteCategory_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_shop_ProductResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_shop_ProductResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_shop_ProductListRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_shop_ProductListRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_shop_CategoryRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_shop_CategoryRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_shop_CategoryResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_shop_CategoryResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_shop_ClientListRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_shop_ClientListRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_shop_ClientResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_shop_ClientResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -38,14 +88,31 @@ public final class ProductProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\rproduct.proto\022\004shop\"\016\n\014SaveResponse\"\'\n" +
-      "\023SaveCategoryRequest\022\020\n\010category\030\001 \001(\014\"%" +
-      "\n\022SaveProductRequest\022\017\n\007product\030\001 \001(\0142\220\001" +
-      "\n\016ProductService\022?\n\014saveCategory\022\031.shop." +
-      "SaveCategoryRequest\032\022.shop.SaveResponse\"" +
-      "\000\022=\n\013saveProduct\022\030.shop.SaveProductReque" +
-      "st\032\022.shop.SaveResponse\"\000B\032\n\010com.shopB\014Pr" +
-      "oductProtoP\001b\006proto3"
+      "\n\rproduct.proto\022\004shop\"\016\n\014SaveResponse\"\020\n" +
+      "\016DeleteResponse\"\'\n\023SaveCategoryRequest\022\020" +
+      "\n\010category\030\001 \001(\014\"%\n\022SaveProductRequest\022\017" +
+      "\n\007product\030\001 \001(\014\" \n\rDeleteProduct\022\017\n\007prod" +
+      "uct\030\001 \001(\014\"\036\n\014DeleteClient\022\016\n\006client\030\001 \001(" +
+      "\014\"\"\n\016DeleteCategory\022\020\n\010category\030\001 \001(\014\"\"\n" +
+      "\017ProductResponse\022\017\n\007product\030\001 \001(\014\"\024\n\022Pro" +
+      "ductListRequest\"\021\n\017CategoryRequest\"$\n\020Ca" +
+      "tegoryResponse\022\020\n\010category\030\001 \001(\014\"\023\n\021Clie" +
+      "ntListRequest\" \n\016ClientResponse\022\016\n\006clien" +
+      "t\030\001 \001(\0142\223\004\n\016ProductService\022?\n\014saveCatego" +
+      "ry\022\031.shop.SaveCategoryRequest\032\022.shop.Sav" +
+      "eResponse\"\000\022=\n\013saveProduct\022\030.shop.SavePr" +
+      "oductRequest\032\022.shop.SaveResponse\"\000\0227\n\tde" +
+      "lClient\022\022.shop.DeleteClient\032\024.shop.Delet" +
+      "eResponse\"\000\0229\n\ndelProduct\022\023.shop.DeleteP" +
+      "roduct\032\024.shop.DeleteResponse\"\000\022;\n\013delCat" +
+      "egory\022\024.shop.DeleteCategory\032\024.shop.Delet" +
+      "eResponse\"\000\022F\n\017takeProductList\022\030.shop.Pr" +
+      "oductListRequest\032\025.shop.ProductResponse\"" +
+      "\0000\001\022C\n\016takeCategories\022\025.shop.CategoryReq" +
+      "uest\032\026.shop.CategoryResponse\"\0000\001\022C\n\016take" +
+      "ClientList\022\027.shop.ClientListRequest\032\024.sh" +
+      "op.ClientResponse\"\0000\001B\032\n\010com.shopB\014Produ" +
+      "ctProtoP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -65,18 +132,78 @@ public final class ProductProto {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_shop_SaveResponse_descriptor,
         new java.lang.String[] { });
-    internal_static_shop_SaveCategoryRequest_descriptor =
+    internal_static_shop_DeleteResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
+    internal_static_shop_DeleteResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_shop_DeleteResponse_descriptor,
+        new java.lang.String[] { });
+    internal_static_shop_SaveCategoryRequest_descriptor =
+      getDescriptor().getMessageTypes().get(2);
     internal_static_shop_SaveCategoryRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_shop_SaveCategoryRequest_descriptor,
         new java.lang.String[] { "Category", });
     internal_static_shop_SaveProductRequest_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_shop_SaveProductRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_shop_SaveProductRequest_descriptor,
         new java.lang.String[] { "Product", });
+    internal_static_shop_DeleteProduct_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_shop_DeleteProduct_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_shop_DeleteProduct_descriptor,
+        new java.lang.String[] { "Product", });
+    internal_static_shop_DeleteClient_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_shop_DeleteClient_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_shop_DeleteClient_descriptor,
+        new java.lang.String[] { "Client", });
+    internal_static_shop_DeleteCategory_descriptor =
+      getDescriptor().getMessageTypes().get(6);
+    internal_static_shop_DeleteCategory_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_shop_DeleteCategory_descriptor,
+        new java.lang.String[] { "Category", });
+    internal_static_shop_ProductResponse_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_shop_ProductResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_shop_ProductResponse_descriptor,
+        new java.lang.String[] { "Product", });
+    internal_static_shop_ProductListRequest_descriptor =
+      getDescriptor().getMessageTypes().get(8);
+    internal_static_shop_ProductListRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_shop_ProductListRequest_descriptor,
+        new java.lang.String[] { });
+    internal_static_shop_CategoryRequest_descriptor =
+      getDescriptor().getMessageTypes().get(9);
+    internal_static_shop_CategoryRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_shop_CategoryRequest_descriptor,
+        new java.lang.String[] { });
+    internal_static_shop_CategoryResponse_descriptor =
+      getDescriptor().getMessageTypes().get(10);
+    internal_static_shop_CategoryResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_shop_CategoryResponse_descriptor,
+        new java.lang.String[] { "Category", });
+    internal_static_shop_ClientListRequest_descriptor =
+      getDescriptor().getMessageTypes().get(11);
+    internal_static_shop_ClientListRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_shop_ClientListRequest_descriptor,
+        new java.lang.String[] { });
+    internal_static_shop_ClientResponse_descriptor =
+      getDescriptor().getMessageTypes().get(12);
+    internal_static_shop_ClientResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_shop_ClientResponse_descriptor,
+        new java.lang.String[] { "Client", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

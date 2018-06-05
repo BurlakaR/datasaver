@@ -101,6 +101,228 @@ public final class ProductServiceGrpc {
      }
      return getSaveProductMethod;
   }
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getDelClientMethod()} instead. 
+  public static final io.grpc.MethodDescriptor<com.shop.DeleteClient,
+      com.shop.DeleteResponse> METHOD_DEL_CLIENT = getDelClientMethodHelper();
+
+  private static volatile io.grpc.MethodDescriptor<com.shop.DeleteClient,
+      com.shop.DeleteResponse> getDelClientMethod;
+
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  public static io.grpc.MethodDescriptor<com.shop.DeleteClient,
+      com.shop.DeleteResponse> getDelClientMethod() {
+    return getDelClientMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<com.shop.DeleteClient,
+      com.shop.DeleteResponse> getDelClientMethodHelper() {
+    io.grpc.MethodDescriptor<com.shop.DeleteClient, com.shop.DeleteResponse> getDelClientMethod;
+    if ((getDelClientMethod = ProductServiceGrpc.getDelClientMethod) == null) {
+      synchronized (ProductServiceGrpc.class) {
+        if ((getDelClientMethod = ProductServiceGrpc.getDelClientMethod) == null) {
+          ProductServiceGrpc.getDelClientMethod = getDelClientMethod = 
+              io.grpc.MethodDescriptor.<com.shop.DeleteClient, com.shop.DeleteResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "shop.ProductService", "delClient"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.shop.DeleteClient.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.shop.DeleteResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new ProductServiceMethodDescriptorSupplier("delClient"))
+                  .build();
+          }
+        }
+     }
+     return getDelClientMethod;
+  }
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getDelProductMethod()} instead. 
+  public static final io.grpc.MethodDescriptor<com.shop.DeleteProduct,
+      com.shop.DeleteResponse> METHOD_DEL_PRODUCT = getDelProductMethodHelper();
+
+  private static volatile io.grpc.MethodDescriptor<com.shop.DeleteProduct,
+      com.shop.DeleteResponse> getDelProductMethod;
+
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  public static io.grpc.MethodDescriptor<com.shop.DeleteProduct,
+      com.shop.DeleteResponse> getDelProductMethod() {
+    return getDelProductMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<com.shop.DeleteProduct,
+      com.shop.DeleteResponse> getDelProductMethodHelper() {
+    io.grpc.MethodDescriptor<com.shop.DeleteProduct, com.shop.DeleteResponse> getDelProductMethod;
+    if ((getDelProductMethod = ProductServiceGrpc.getDelProductMethod) == null) {
+      synchronized (ProductServiceGrpc.class) {
+        if ((getDelProductMethod = ProductServiceGrpc.getDelProductMethod) == null) {
+          ProductServiceGrpc.getDelProductMethod = getDelProductMethod = 
+              io.grpc.MethodDescriptor.<com.shop.DeleteProduct, com.shop.DeleteResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "shop.ProductService", "delProduct"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.shop.DeleteProduct.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.shop.DeleteResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new ProductServiceMethodDescriptorSupplier("delProduct"))
+                  .build();
+          }
+        }
+     }
+     return getDelProductMethod;
+  }
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getDelCategoryMethod()} instead. 
+  public static final io.grpc.MethodDescriptor<com.shop.DeleteCategory,
+      com.shop.DeleteResponse> METHOD_DEL_CATEGORY = getDelCategoryMethodHelper();
+
+  private static volatile io.grpc.MethodDescriptor<com.shop.DeleteCategory,
+      com.shop.DeleteResponse> getDelCategoryMethod;
+
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  public static io.grpc.MethodDescriptor<com.shop.DeleteCategory,
+      com.shop.DeleteResponse> getDelCategoryMethod() {
+    return getDelCategoryMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<com.shop.DeleteCategory,
+      com.shop.DeleteResponse> getDelCategoryMethodHelper() {
+    io.grpc.MethodDescriptor<com.shop.DeleteCategory, com.shop.DeleteResponse> getDelCategoryMethod;
+    if ((getDelCategoryMethod = ProductServiceGrpc.getDelCategoryMethod) == null) {
+      synchronized (ProductServiceGrpc.class) {
+        if ((getDelCategoryMethod = ProductServiceGrpc.getDelCategoryMethod) == null) {
+          ProductServiceGrpc.getDelCategoryMethod = getDelCategoryMethod = 
+              io.grpc.MethodDescriptor.<com.shop.DeleteCategory, com.shop.DeleteResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "shop.ProductService", "delCategory"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.shop.DeleteCategory.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.shop.DeleteResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new ProductServiceMethodDescriptorSupplier("delCategory"))
+                  .build();
+          }
+        }
+     }
+     return getDelCategoryMethod;
+  }
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getTakeProductListMethod()} instead. 
+  public static final io.grpc.MethodDescriptor<com.shop.ProductListRequest,
+      com.shop.ProductResponse> METHOD_TAKE_PRODUCT_LIST = getTakeProductListMethodHelper();
+
+  private static volatile io.grpc.MethodDescriptor<com.shop.ProductListRequest,
+      com.shop.ProductResponse> getTakeProductListMethod;
+
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  public static io.grpc.MethodDescriptor<com.shop.ProductListRequest,
+      com.shop.ProductResponse> getTakeProductListMethod() {
+    return getTakeProductListMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<com.shop.ProductListRequest,
+      com.shop.ProductResponse> getTakeProductListMethodHelper() {
+    io.grpc.MethodDescriptor<com.shop.ProductListRequest, com.shop.ProductResponse> getTakeProductListMethod;
+    if ((getTakeProductListMethod = ProductServiceGrpc.getTakeProductListMethod) == null) {
+      synchronized (ProductServiceGrpc.class) {
+        if ((getTakeProductListMethod = ProductServiceGrpc.getTakeProductListMethod) == null) {
+          ProductServiceGrpc.getTakeProductListMethod = getTakeProductListMethod = 
+              io.grpc.MethodDescriptor.<com.shop.ProductListRequest, com.shop.ProductResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+              .setFullMethodName(generateFullMethodName(
+                  "shop.ProductService", "takeProductList"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.shop.ProductListRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.shop.ProductResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new ProductServiceMethodDescriptorSupplier("takeProductList"))
+                  .build();
+          }
+        }
+     }
+     return getTakeProductListMethod;
+  }
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getTakeCategoriesMethod()} instead. 
+  public static final io.grpc.MethodDescriptor<com.shop.CategoryRequest,
+      com.shop.CategoryResponse> METHOD_TAKE_CATEGORIES = getTakeCategoriesMethodHelper();
+
+  private static volatile io.grpc.MethodDescriptor<com.shop.CategoryRequest,
+      com.shop.CategoryResponse> getTakeCategoriesMethod;
+
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  public static io.grpc.MethodDescriptor<com.shop.CategoryRequest,
+      com.shop.CategoryResponse> getTakeCategoriesMethod() {
+    return getTakeCategoriesMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<com.shop.CategoryRequest,
+      com.shop.CategoryResponse> getTakeCategoriesMethodHelper() {
+    io.grpc.MethodDescriptor<com.shop.CategoryRequest, com.shop.CategoryResponse> getTakeCategoriesMethod;
+    if ((getTakeCategoriesMethod = ProductServiceGrpc.getTakeCategoriesMethod) == null) {
+      synchronized (ProductServiceGrpc.class) {
+        if ((getTakeCategoriesMethod = ProductServiceGrpc.getTakeCategoriesMethod) == null) {
+          ProductServiceGrpc.getTakeCategoriesMethod = getTakeCategoriesMethod = 
+              io.grpc.MethodDescriptor.<com.shop.CategoryRequest, com.shop.CategoryResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+              .setFullMethodName(generateFullMethodName(
+                  "shop.ProductService", "takeCategories"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.shop.CategoryRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.shop.CategoryResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new ProductServiceMethodDescriptorSupplier("takeCategories"))
+                  .build();
+          }
+        }
+     }
+     return getTakeCategoriesMethod;
+  }
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getTakeClientListMethod()} instead. 
+  public static final io.grpc.MethodDescriptor<com.shop.ClientListRequest,
+      com.shop.ClientResponse> METHOD_TAKE_CLIENT_LIST = getTakeClientListMethodHelper();
+
+  private static volatile io.grpc.MethodDescriptor<com.shop.ClientListRequest,
+      com.shop.ClientResponse> getTakeClientListMethod;
+
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  public static io.grpc.MethodDescriptor<com.shop.ClientListRequest,
+      com.shop.ClientResponse> getTakeClientListMethod() {
+    return getTakeClientListMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<com.shop.ClientListRequest,
+      com.shop.ClientResponse> getTakeClientListMethodHelper() {
+    io.grpc.MethodDescriptor<com.shop.ClientListRequest, com.shop.ClientResponse> getTakeClientListMethod;
+    if ((getTakeClientListMethod = ProductServiceGrpc.getTakeClientListMethod) == null) {
+      synchronized (ProductServiceGrpc.class) {
+        if ((getTakeClientListMethod = ProductServiceGrpc.getTakeClientListMethod) == null) {
+          ProductServiceGrpc.getTakeClientListMethod = getTakeClientListMethod = 
+              io.grpc.MethodDescriptor.<com.shop.ClientListRequest, com.shop.ClientResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+              .setFullMethodName(generateFullMethodName(
+                  "shop.ProductService", "takeClientList"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.shop.ClientListRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.shop.ClientResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new ProductServiceMethodDescriptorSupplier("takeClientList"))
+                  .build();
+          }
+        }
+     }
+     return getTakeClientListMethod;
+  }
 
   /**
    * Creates a new async stub that supports all call types for the service
@@ -143,6 +365,48 @@ public final class ProductServiceGrpc {
       asyncUnimplementedUnaryCall(getSaveProductMethodHelper(), responseObserver);
     }
 
+    /**
+     */
+    public void delClient(com.shop.DeleteClient request,
+        io.grpc.stub.StreamObserver<com.shop.DeleteResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getDelClientMethodHelper(), responseObserver);
+    }
+
+    /**
+     */
+    public void delProduct(com.shop.DeleteProduct request,
+        io.grpc.stub.StreamObserver<com.shop.DeleteResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getDelProductMethodHelper(), responseObserver);
+    }
+
+    /**
+     */
+    public void delCategory(com.shop.DeleteCategory request,
+        io.grpc.stub.StreamObserver<com.shop.DeleteResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getDelCategoryMethodHelper(), responseObserver);
+    }
+
+    /**
+     */
+    public void takeProductList(com.shop.ProductListRequest request,
+        io.grpc.stub.StreamObserver<com.shop.ProductResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getTakeProductListMethodHelper(), responseObserver);
+    }
+
+    /**
+     */
+    public void takeCategories(com.shop.CategoryRequest request,
+        io.grpc.stub.StreamObserver<com.shop.CategoryResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getTakeCategoriesMethodHelper(), responseObserver);
+    }
+
+    /**
+     */
+    public void takeClientList(com.shop.ClientListRequest request,
+        io.grpc.stub.StreamObserver<com.shop.ClientResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getTakeClientListMethodHelper(), responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -159,6 +423,48 @@ public final class ProductServiceGrpc {
                 com.shop.SaveProductRequest,
                 com.shop.SaveResponse>(
                   this, METHODID_SAVE_PRODUCT)))
+          .addMethod(
+            getDelClientMethodHelper(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                com.shop.DeleteClient,
+                com.shop.DeleteResponse>(
+                  this, METHODID_DEL_CLIENT)))
+          .addMethod(
+            getDelProductMethodHelper(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                com.shop.DeleteProduct,
+                com.shop.DeleteResponse>(
+                  this, METHODID_DEL_PRODUCT)))
+          .addMethod(
+            getDelCategoryMethodHelper(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                com.shop.DeleteCategory,
+                com.shop.DeleteResponse>(
+                  this, METHODID_DEL_CATEGORY)))
+          .addMethod(
+            getTakeProductListMethodHelper(),
+            asyncServerStreamingCall(
+              new MethodHandlers<
+                com.shop.ProductListRequest,
+                com.shop.ProductResponse>(
+                  this, METHODID_TAKE_PRODUCT_LIST)))
+          .addMethod(
+            getTakeCategoriesMethodHelper(),
+            asyncServerStreamingCall(
+              new MethodHandlers<
+                com.shop.CategoryRequest,
+                com.shop.CategoryResponse>(
+                  this, METHODID_TAKE_CATEGORIES)))
+          .addMethod(
+            getTakeClientListMethodHelper(),
+            asyncServerStreamingCall(
+              new MethodHandlers<
+                com.shop.ClientListRequest,
+                com.shop.ClientResponse>(
+                  this, METHODID_TAKE_CLIENT_LIST)))
           .build();
     }
   }
@@ -196,6 +502,54 @@ public final class ProductServiceGrpc {
       asyncUnaryCall(
           getChannel().newCall(getSaveProductMethodHelper(), getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public void delClient(com.shop.DeleteClient request,
+        io.grpc.stub.StreamObserver<com.shop.DeleteResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getDelClientMethodHelper(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void delProduct(com.shop.DeleteProduct request,
+        io.grpc.stub.StreamObserver<com.shop.DeleteResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getDelProductMethodHelper(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void delCategory(com.shop.DeleteCategory request,
+        io.grpc.stub.StreamObserver<com.shop.DeleteResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getDelCategoryMethodHelper(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void takeProductList(com.shop.ProductListRequest request,
+        io.grpc.stub.StreamObserver<com.shop.ProductResponse> responseObserver) {
+      asyncServerStreamingCall(
+          getChannel().newCall(getTakeProductListMethodHelper(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void takeCategories(com.shop.CategoryRequest request,
+        io.grpc.stub.StreamObserver<com.shop.CategoryResponse> responseObserver) {
+      asyncServerStreamingCall(
+          getChannel().newCall(getTakeCategoriesMethodHelper(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void takeClientList(com.shop.ClientListRequest request,
+        io.grpc.stub.StreamObserver<com.shop.ClientResponse> responseObserver) {
+      asyncServerStreamingCall(
+          getChannel().newCall(getTakeClientListMethodHelper(), getCallOptions()), request, responseObserver);
+    }
   }
 
   /**
@@ -228,6 +582,51 @@ public final class ProductServiceGrpc {
     public com.shop.SaveResponse saveProduct(com.shop.SaveProductRequest request) {
       return blockingUnaryCall(
           getChannel(), getSaveProductMethodHelper(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.shop.DeleteResponse delClient(com.shop.DeleteClient request) {
+      return blockingUnaryCall(
+          getChannel(), getDelClientMethodHelper(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.shop.DeleteResponse delProduct(com.shop.DeleteProduct request) {
+      return blockingUnaryCall(
+          getChannel(), getDelProductMethodHelper(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.shop.DeleteResponse delCategory(com.shop.DeleteCategory request) {
+      return blockingUnaryCall(
+          getChannel(), getDelCategoryMethodHelper(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public java.util.Iterator<com.shop.ProductResponse> takeProductList(
+        com.shop.ProductListRequest request) {
+      return blockingServerStreamingCall(
+          getChannel(), getTakeProductListMethodHelper(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public java.util.Iterator<com.shop.CategoryResponse> takeCategories(
+        com.shop.CategoryRequest request) {
+      return blockingServerStreamingCall(
+          getChannel(), getTakeCategoriesMethodHelper(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public java.util.Iterator<com.shop.ClientResponse> takeClientList(
+        com.shop.ClientListRequest request) {
+      return blockingServerStreamingCall(
+          getChannel(), getTakeClientListMethodHelper(), getCallOptions(), request);
     }
   }
 
@@ -264,10 +663,40 @@ public final class ProductServiceGrpc {
       return futureUnaryCall(
           getChannel().newCall(getSaveProductMethodHelper(), getCallOptions()), request);
     }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.shop.DeleteResponse> delClient(
+        com.shop.DeleteClient request) {
+      return futureUnaryCall(
+          getChannel().newCall(getDelClientMethodHelper(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.shop.DeleteResponse> delProduct(
+        com.shop.DeleteProduct request) {
+      return futureUnaryCall(
+          getChannel().newCall(getDelProductMethodHelper(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.shop.DeleteResponse> delCategory(
+        com.shop.DeleteCategory request) {
+      return futureUnaryCall(
+          getChannel().newCall(getDelCategoryMethodHelper(), getCallOptions()), request);
+    }
   }
 
   private static final int METHODID_SAVE_CATEGORY = 0;
   private static final int METHODID_SAVE_PRODUCT = 1;
+  private static final int METHODID_DEL_CLIENT = 2;
+  private static final int METHODID_DEL_PRODUCT = 3;
+  private static final int METHODID_DEL_CATEGORY = 4;
+  private static final int METHODID_TAKE_PRODUCT_LIST = 5;
+  private static final int METHODID_TAKE_CATEGORIES = 6;
+  private static final int METHODID_TAKE_CLIENT_LIST = 7;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -293,6 +722,30 @@ public final class ProductServiceGrpc {
         case METHODID_SAVE_PRODUCT:
           serviceImpl.saveProduct((com.shop.SaveProductRequest) request,
               (io.grpc.stub.StreamObserver<com.shop.SaveResponse>) responseObserver);
+          break;
+        case METHODID_DEL_CLIENT:
+          serviceImpl.delClient((com.shop.DeleteClient) request,
+              (io.grpc.stub.StreamObserver<com.shop.DeleteResponse>) responseObserver);
+          break;
+        case METHODID_DEL_PRODUCT:
+          serviceImpl.delProduct((com.shop.DeleteProduct) request,
+              (io.grpc.stub.StreamObserver<com.shop.DeleteResponse>) responseObserver);
+          break;
+        case METHODID_DEL_CATEGORY:
+          serviceImpl.delCategory((com.shop.DeleteCategory) request,
+              (io.grpc.stub.StreamObserver<com.shop.DeleteResponse>) responseObserver);
+          break;
+        case METHODID_TAKE_PRODUCT_LIST:
+          serviceImpl.takeProductList((com.shop.ProductListRequest) request,
+              (io.grpc.stub.StreamObserver<com.shop.ProductResponse>) responseObserver);
+          break;
+        case METHODID_TAKE_CATEGORIES:
+          serviceImpl.takeCategories((com.shop.CategoryRequest) request,
+              (io.grpc.stub.StreamObserver<com.shop.CategoryResponse>) responseObserver);
+          break;
+        case METHODID_TAKE_CLIENT_LIST:
+          serviceImpl.takeClientList((com.shop.ClientListRequest) request,
+              (io.grpc.stub.StreamObserver<com.shop.ClientResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -357,6 +810,12 @@ public final class ProductServiceGrpc {
               .setSchemaDescriptor(new ProductServiceFileDescriptorSupplier())
               .addMethod(getSaveCategoryMethodHelper())
               .addMethod(getSaveProductMethodHelper())
+              .addMethod(getDelClientMethodHelper())
+              .addMethod(getDelProductMethodHelper())
+              .addMethod(getDelCategoryMethodHelper())
+              .addMethod(getTakeProductListMethodHelper())
+              .addMethod(getTakeCategoriesMethodHelper())
+              .addMethod(getTakeClientListMethodHelper())
               .build();
         }
       }
